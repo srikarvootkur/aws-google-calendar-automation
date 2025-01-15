@@ -1,0 +1,8 @@
+{
+  "status": 200,
+  "response": {
+    "id": "abc123",
+    "status": "confirmed",
+    "htmlLink": "https://www.google.com/calendar/event?eid=abc123"
+  }
+}
