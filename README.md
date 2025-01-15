@@ -155,28 +155,28 @@ def parse_natural_language(input_text):
 2. Run a Curl command in the following form:
    ```Command Line
    curl -X POST https://2k0px8lwj3.execute-api.us-east-2.amazonaws.com/Create_Google_Calendar_Event \
--H "Content-Type: application/json" \
--d '{
-  "summary": "Test Event",
-  "start": {
-    "dateTime": "2025-01-15T10:00:00-05:00",
-    "timeZone": "America/New_York"
-  },
-  "end": {
-    "dateTime": "2025-01-15T11:00:00-05:00",
-    "timeZone": "America/New_York"
-  },
-  "reminders": {
-    "useDefault": false,
-    "overrides": [
-      {
-        "method": "popup",
-        "minutes": 15
-      }
-    ]
-  }
-}'
-```
+   -H "Content-Type: application/json" \
+   -d '{
+     "summary": "Test Event",
+     "start": {
+       "dateTime": "2025-01-15T10:00:00-05:00",
+       "timeZone": "America/New_York"
+     },
+     "end": {
+       "dateTime": "2025-01-15T11:00:00-05:00",
+       "timeZone": "America/New_York"
+     },
+     "reminders": {
+       "useDefault": false,
+       "overrides": [
+         {
+           "method": "popup",
+           "minutes": 15
+         }
+       ]
+     }
+   }'
+   ```
 #### **API Endpoint**:
 ```
 [https://your-api-id.execute-api.us-east-1.amazonaws.com/prod/schedule](https://2k0px8lwj3.execute-api.us-east-2.amazonaws.com/Create_Google_Calendar_Event)
