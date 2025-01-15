@@ -25,9 +25,9 @@ def refresh_access_token(refresh_token, client_id, client_secret):
 # Lambda handler function
 def lambda_handler(event, context):
     # Replace these with your actual credentials
-    CLIENT_ID = "1042953427809-tsou3jq0m9o0rm3tmt609dj26i3hh6av.apps.googleusercontent.com"
-    CLIENT_SECRET = "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"
-    REFRESH_TOKEN = "1//04oMlHg9x8ugACgYIARAAGAQSNwF-L9IrGwJQzspPRBACvzGnvoS9xMdxMKfDEBgBMxGZ7Aix2uLaVJR43cPtQS3zzp0HBTjzTAI"
+    CLIENT_ID = os.getenv("CLIENT_ID")
+    CLIENT_SECRET = os.getenv("CLIENT_SECRET")
+    REFRESH_TOKEN = os.getenv("REFRESH_TOKEN")
 
     # Refresh the access token
     access_token = refresh_access_token(REFRESH_TOKEN, CLIENT_ID, CLIENT_SECRET)
