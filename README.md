@@ -30,7 +30,7 @@ User Input -> API Gateway -> Lambda Function -> Google Calendar API -> Event Sch
 ## Implementation Details
 
 ### 1. **Python Script for Lambda Function**
-The Python script processes the incoming request, interacts with the Google Calendar API, and handles authentication and event creation.
+The lambda_function.py Python script processes the incoming request, interacts with the Google Calendar API, and handles authentication and event creation.
 
 ---
 
